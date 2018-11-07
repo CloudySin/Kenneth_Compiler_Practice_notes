@@ -78,6 +78,7 @@
 - binding **sequential** statements together with just one node
     - left-most children & right-sibling
         >issue: distinguish this from child links
+### 3.4 Ambiguity
 #### 3.4.1 Ambiguous Grammars
 - ambiguous grammar: that generates two distinct parse trees;
     > syntactic structure is NOT specified precisely( should be avoided of course!)
