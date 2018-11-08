@@ -26,3 +26,12 @@ foreword:
     - pitfalls:
         - match of the operations must be before calls;
 #### 4.1.3 Further Decision Problems
+- problems:
+    - 1.difficult: BNF->EBNF;
+    - 2.difficult: decide the proper nonterminal option;
+        - First set;
+    - 3.difficult: Nonterminal A -> ε
+        - Folllow set of "A";
+    - 4.early error detection;
+        - First set;
+        - Folllow set of "A";
