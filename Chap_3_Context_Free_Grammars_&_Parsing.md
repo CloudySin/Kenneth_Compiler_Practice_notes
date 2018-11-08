@@ -29,7 +29,7 @@
     - No repetition(no "*")
     - definition--"->"
     - use RE as components
-    - is called in "Backus-Naur form(BNF)"
+    - is called in "Backus-Naur form(**BNF**)"
 #### 3.2.2 Specification of CFG rules
 - Alphabet:
     - RE -> chars
@@ -100,3 +100,51 @@
     - different rules;
     > "precedence cascade"
 #### 3.4.3 The Dangling Else Problem
+Ways of solution:
+1. one: require the precense of else-part;
+2. another one: use a bracketing keyword for the if-statement ("end-if");
+#### 3.4.4 Inessential Ambiguity
+- Inessential ambiguity: same syntax structure from different recursive grammar rule. (eg.:"associative operations");
+### 3.5 Extented Notations: EBNF & Syntax Diagrams
+#### 3.5.1 EBNF Notation
+- EBNF = (repetitive + optional) constructs + BNF
+- repetition -> "{}"
+- optional -> "()"
+#### 3.5.2 Syntax Diagrams
+> syntax diagrams: graphical representations for EBNF rules
+- "round" graphics -> "terminals"
+- "rectangle" graphics -> "nonterminals"
+### 3.6 Formal Properties of Context-Free Languages
+#### 3.6.1 A Formal Definition of Context-Free Languages
+- Definition（Components）：
+    - A set T of terminals;
+    - A set N of nonterminals;
+    - A set P of grammar rules (directional-links: "A -> α");
+    - A start symbol S from the set N;
+- Derived components:
+    - derivation step;
+        - set of symbols;
+        - sentential form;
+    - L(G): set of sentences derivable from S;
+        - leftmost derivation;
+        - rightmost derivation;
+#### 3.6.2 Grammar Rules as Equations
+- least-fixed-point semantics "E":
+    - 1. f(E) = (E+E) ∪ N;
+    - 2. E = f(E);
+#### 3.6.3 The Chomsky Hierarchy & Limits of Syntax as Context-Free Rules
+- Chomskey Hierarchy: language classes constructed by four grammars;
+    - regular grammar: to express sth. only;(type 3)
+    - context free rules: "->";(type 2)
+        - context: a pair of strings;
+    - context-sensitive grammar rule;(type 1)
+        - eg. use of names: C's declaration before use;
+            - with BNF
+                - 1. include names in grammar rules;
+                - 2. for each name: write a rule -> establish itsdeclaration prior to a potential use;
+            - static semantics: rules that beyond the parser but still in compiler;
+                - "type checking";
+    - unrestricted grammars: no restrictions on α & β in "α -> β";(type 0)
+        - corresponding equivalent machine； pushdown automaton;
+### 3.7 Syntax of the TINY Language
+#### 3.7.1 A context-free grammar for TINY;
