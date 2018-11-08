@@ -35,3 +35,7 @@ foreword:
     - 4.early error detection;
         - First set;
         - Folllow set of "A";
+### 4.2 LL(1) Parsing
+#### 4.2.1 Basic Method of LL(1) Parsing
+> LL(1) parsing uses an explicit stack ranther than recursive calls to perform a parse;
+- 
