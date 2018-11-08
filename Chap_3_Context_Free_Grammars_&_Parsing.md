@@ -148,4 +148,40 @@ Ways of solution:
         - corresponding equivalent machine； pushdown automaton;
 ### 3.7 Syntax of the TINY Language
 #### 3.7.1 A context-free grammar for TINY;
-
+- five kinds of components:
+    - if;
+    - repeat;
+    - read;
+    - write;
+    - assignment;
+- two kind of expressions:
+    - Boolean;
+        - nonassociative;
+        - no precedence;
+    - Arithmetic;
+        - left associative;
+        - usual precedences;
+- no empty statements in TINY;
+#### Syntax Tree Structure for the TINY Compiler
+- two basic structure kinds:
+    - statements;
+        - five kinds:
+            - if~assignment;
+    - expressions;
+        - three kinds:
+            - operator;
+            - constant;
+            - identifier;
+- node:
+    - structure;
+        - expression node;
+            - special attribute for each one:
+                - contant node;
+                    - one field for its interger value;
+                - identifier node;
+                    - one field for its name value;
+                - operator node;
+                    - one field for its operator name;
+        - statement node;
+            - no attributes in general;
+    - attributes;
