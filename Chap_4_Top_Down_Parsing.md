@@ -38,4 +38,10 @@ foreword:
 ### 4.2 LL(1) Parsing
 #### 4.2.1 Basic Method of LL(1) Parsing
 > LL(1) parsing uses an explicit stack ranther than recursive calls to perform a parse;
-- 
+- Actions：
+    - Generate: Replace a nonterminal A at the top of the stack: A -> α;
+    - Match: Match a token on the top of the stack with a next token input;
+#### 4.2.2 The LL(1) Parsing Table & Algorithm
+- Parsing Method -> LL(1) Paring Table "M[N, T]" : Possible choices;
+    - rules:
+        - "A -> α" is a production choice
