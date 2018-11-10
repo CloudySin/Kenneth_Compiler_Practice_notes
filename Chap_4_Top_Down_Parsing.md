@@ -44,4 +44,11 @@ foreword:
 #### 4.2.2 The LL(1) Parsing Table & Algorithm
 - Parsing Method -> LL(1) Paring Table "M[N, T]" : Possible choices;
     - rules:
-        - "A -> α" is a production choice
+        - if "A -> α" is a production choice
+            - if there is:
+                - "α ->* aβ" (a is a token)
+                    - add "A->α" to M[A, a];
+            - if there is:
+                - "α ->* ε"
+                - "S$ ->* βAaγ" (S is start symbol, a is a token, )
+                    - add "A->α" to M[A, a];
